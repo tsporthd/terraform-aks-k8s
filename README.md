@@ -20,3 +20,5 @@ Step 7 - run installKubeCtl
 Step 8 - kubectl get nodes   
 To validate cluster is up
 
+Referencing a public key in ~/.ssh/id_rsa.pub
+If you don't have a ssh keys created following instructions from https://www.ssh.com/ssh/keygen/
