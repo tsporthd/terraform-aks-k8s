@@ -6,5 +6,12 @@ provider "azurerm" {
 }
 
 terraform {
-    backend "azurerm" {}
+  backend "remote" {
+    organization = "llp-terraform"
+    workspaces {
+      name = "terraform-aks-k8s"
+    }
+  }
 }
+
+
