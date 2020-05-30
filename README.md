@@ -17,8 +17,14 @@ Step 6 - echo "$(terraform output kube_config)" > ./azurek8s
 
 Step 7 - run installKubeCtl 
 
-Step 8 - kubectl get nodes   
+Step 8 - export KUBECONFIG=./azurek8s
+
+Step 9 - kubectl get nodes   
 To validate cluster is up
 
 Referencing a public key in ~/.ssh/id_rsa.pub
 If you don't have a ssh keys created following instructions from https://www.ssh.com/ssh/keygen/
+
+
+
+NOTE: This repo has been converted to use Terraform Cloud so to use Terraform OSS you will need to remove the terraform remote backend.
